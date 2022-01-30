@@ -1,6 +1,75 @@
-/* CSS Custom Properties Definitions */
-
 :root {
+  --color-text: hsl(0deg, 0%, 100%);
+  --color-background: hsl(210deg, 30%, 8%);
+  --color-blurred-background: hsla(210deg, 30%, 8%, 0.85);
+  --color-primary: hsl(230deg, 100%, 67%);
+  --color-secondary: hsl(333deg, 100%, 52%);
+  --color-tertiary: hsl(53deg, 100%, 50%);
+  --color-decorative: hsl(200deg, 50%, 60%);
+  --color-muted: hsl(210deg, 38%, 15%);
+  --color-muted-background: hsla(210deg, 38%, 15%, 0.85);
+  --color-info: hsl(230deg, 100%, 67%);
+  --color-success: hsl(160deg, 100%, 40%);
+  --color-success-background: hsla(160deg, 100%, 40%, 0.1);
+  --color-error: hsl(340deg, 95%, 60%);
+  --color-error-background: hsla(340deg, 95%, 43%, 0.1);
+  --color-alert: hsl(30deg, 100%, 50%);
+  --color-alert-background: hsla(38deg, 100%, 50%, 0.1);
+  --color-venn-0: hsl(250deg, 100%, 50%);
+
+  --color-venn-1: hsl(175deg, 100%, 50%);
+  --color-heading: #f7f9fe;
+  --color-text: #a9adc1;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue-100: #e8f2ff;
+  --color-blue-500: #4b96ff;
+  --color-blueGray-500: #a9adc1;
+  --color-gray-100: #f7f7f7;
+  --color-gray-200: #e6e9ee;
+  --color-gray-300: #dde0e4;
+  --color-gray-400: #818890;
+  --color-gray-500: #535661;
+  --color-gray-600: #4b4c53;
+  --color-gray-700: #3a3d4a;
+  --color-gray-800: #2e3039;
+  --color-gray-900: #1f2028;
+  --color-gray-1000: hsl(210deg, 25%, 96%);
+  --color-green-100: #e7f9ed;
+  --color-green-500: #30c85e;
+  --color-green-600: #68d94a;
+  --color-red-500: #ff4545;
+  --color-yellow-500: #ffd644;
+  --color-team-unknown: #818890;
+  --color-team-blue: #36a3ff;
+  --color-team-red: #ff4545;
+  --color-team-yellow: #a08600;
+  --color-yellow-500: #a08600;
+
+  --color-subtle-background: hsl(210deg, 30%, 8%);
+  --color-subtle-floating: hsl(210deg, 22%, 15%);
+  --color-homepage-light: hsla(200deg, 100%, 85%, 0);
+  --color-homepage-dark: hsla(200deg, 100%, 85%, 0.1);
+  --color-homepage-bg: hsl(210deg, 30%, 8%);
+  --syntax-bg: hsl(210deg, 30%, 12%);
+  --syntax-highlight: hsl(210deg, 30%, 18%);
+  --syntax-txt: #fff;
+  --syntax-comment: #6c8998;
+  --syntax-prop: #ff39a8;
+  --syntax-bool: #ffd600;
+  --syntax-val: #61747d;
+  --syntax-str: rgb(155, 109, 255);
+  --syntax-name: #c653ff;
+  --syntax-del: #ff5555;
+  --syntax-regex: #ffd700;
+  --syntax-fn: rgb(0, 190, 255);
+  --prefers-dark: true;
+  --color--subtle--floating: hsl(210deg, 22%, 15%);
+
+  /*
+  --primary-bg: '#0e141b',
+
+  --color-background : hsl(210deg, 30%, 8%)
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
   --maxWidth-sm: 24rem;
@@ -46,6 +115,7 @@
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
+  /*
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
   --fontSize-2: 1.2rem;
@@ -53,281 +123,202 @@
   --fontSize-4: 1.728rem;
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
+  --fontSize-7: 2.986rem; 
   --color-primary: #005b99;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
-  --color-accent: #d1dce5;
-}
-
-/* HTML elements */
-
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
-
-html {
-  line-height: var(--lineHeight-normal);
-  font-size: var(--fontSize-root);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-accent: #d1dce5; */
+  --font-weight-bold: 600;
+  --font-weight-medium: 500;
+  --font-weight-light: 400;
+  --font-family: "Wotfard", Futura, -apple-system, sans-serif;
+  --font-family-mono: "League Mono", "Fira Mono", monospace;
+  --font-family-spicy: "Sriracha", "Wotfard", Futura, -apple-system, sans-serif;
+  --reach-dialog: 1;
 }
 
 body {
-  font-family: var(--font-body);
-  font-size: var(--fontSize-1);
-  color: var(--color-text);
+  background: var(--color-background);
+  color: var(--color-gray-1000);
 }
 
-footer {
-  padding: var(--spacing-6) var(--spacing-0);
-}
-
-hr {
-  background: var(--color-accent);
-  height: 1px;
-  border: 0;
-}
-
-/* Heading */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-6);
-  line-height: var(--lineHeight-tight);
-  letter-spacing: -0.025em;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--fontWeight-bold);
-  color: var(--color-heading);
-}
-
-h1 {
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
-}
-
-h2 {
-  font-size: var(--fontSize-5);
-}
-
-h3 {
-  font-size: var(--fontSize-4);
-}
-
-h4 {
-  font-size: var(--fontSize-3);
-}
-
-h5 {
-  font-size: var(--fontSize-2);
-}
-
-h6 {
-  font-size: var(--fontSize-1);
-}
-
-h1 > a {
-  color: inherit;
-  text-decoration: none;
-}
-
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Prose */
-
-p {
-  line-height: var(--lineHeight-relaxed);
-  --baseline-multiplier: 0.179;
-  --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
-  padding: var(--spacing-0);
-}
-
-ul,
-ol {
-  margin-left: var(--spacing-0);
-  margin-right: var(--spacing-0);
-  padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
-  list-style-position: outside;
-  list-style-image: none;
-}
-
-ul li,
-ol li {
-  padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
-}
-
-li > p {
-  margin-bottom: calc(var(--spacing-8) / 2);
-}
-
-li *:last-child {
-  margin-bottom: var(--spacing-0);
-}
-
-li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
-}
-
-blockquote {
-  color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
-  margin-right: var(--spacing-8);
-  padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
-  font-style: italic;
-  margin-bottom: var(--spacing-8);
-}
-
-blockquote > :last-child {
-  margin-bottom: var(--spacing-0);
-}
-
-blockquote > ul,
-blockquote > ol {
-  list-style-position: inside;
-}
-
-table {
-  width: 100%;
-  margin-bottom: var(--spacing-8);
-  border-collapse: collapse;
-  border-spacing: 0.25rem;
-}
-
-table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
-}
-
-/* Link */
-
-a {
-  color: var(--color-primary);
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-/* Custom classes */
-
-.global-wrapper {
-  margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
-}
-
-.global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
-}
-
-.global-header {
-  margin-bottom: var(--spacing-12);
-}
-
-.main-heading {
-  font-size: var(--fontSize-7);
+* {
   margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+.container {
+  width: 85%;
+  margin: auto;
 }
 
-.post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+
+/* header  **/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  transition: 0.5s;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
 }
 
-.post-list-item p {
-  margin-bottom: var(--spacing-0);
+.header-sticky {
+  background-color: var(--color-background) !important;
+  color: var(--color-gray-1000);
 }
-
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-}
-
-.post-list-item header {
-  margin-bottom: var(--spacing-4);
-}
-
-.header-link-home {
-  font-weight: var(--fontWeight-bold);
-  font-family: var(--font-heading);
+.logo {
+  color: inherit;
+  font-size: 1.5rem;
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
   text-decoration: none;
-  font-size: var(--fontSize-2);
 }
-
-.bio {
+nav {
+  float: right;
+  position: sticky;
+}
+.clearfix {
+  clear: both;
+}
+.textColorDark {
+  color: var(--color-background) !important;
+}
+a {
+  color: var(--color-gray-1000);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-team-blue) !important;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  margin-bottom: var(--spacing-16);
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  transition: 0.5s;
+}
+@media (max-width: 1200px) {
 }
 
-.bio p {
-  margin-bottom: var(--spacing-0);
-}
-
-.bio-avatar {
-  margin-right: var(--spacing-4);
-  margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 100%;
-}
-
-.blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
-}
-
-.blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
-}
-
-.blog-post-nav ul {
-  margin: var(--spacing-0);
-}
-
-.gatsby-highlight {
-  margin-bottom: var(--spacing-8);
-}
-
-/* Media queries */
-
-@media (max-width: 42rem) {
-  blockquote {
-    padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
-    margin-left: var(--spacing-0);
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
   }
-  ul,
-  ol {
-    list-style-position: inside;
+  .menu-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+    color: var(--color-gray-1000);
   }
+  .menu-toggle::before {
+    font-family: "fontAwesome";
+    font-weight: 400;
+    content: "\f0c9";
+    line-height: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .blogsBar
+  {
+    width: 100%;
+  }
+  .sidebar
+  {
+    width: 100%;
+  }
+}
+
+/*** dropdown ***/
+
+ul li a:hover {
+  color: #fff;
+}
+ul li ul.dropdown {
+  color: var(--color-gray-1000);
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+ul li:hover ul.dropdown {
+  display: block; /* Display the dropdown */
+}
+ul li ul.dropdown li {
+  display: block;
+}
+
+ .allposts
+ {
+   margin-top: 12em;
+ }
+.cardmd
+{
+  background-color: rgb(31, 32, 40 ,0.4);
+  padding: 2em 1em;
+  line-height: 2em;
+  margin: 2em 0em;
+  border-radius: 0.5em;
+}
+
+.cardmd a
+{
+  font-size: 1.2em;
+  width: 100%;
+  display: block;
+}
+
+.cardmd p
+{
+  font-size: 1em;
+}
+.blogsBar
+{
+  width: 70%;float: left;
+}
+
+.sidebar
+{
+  width: 25%;
+  float: right;
+  margin-top: 2.5em;
+}
+
+.filerBox
+{
+  border-radius: 0.5em;
+  background-color: var(--color-blue-500);
+  padding: 1.2em 2em;
+  width: auto;
+}
+
+
+footer
+{
+  z-index: 100000;
 }

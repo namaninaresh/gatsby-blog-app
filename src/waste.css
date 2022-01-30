@@ -1,0 +1,311 @@
+/* CSS Custom Properties Definitions */
+
+:root {
+  --color-text: hsl(0deg, 0%, 100%);
+  --color-background: hsl(210deg, 30%, 8%);
+  --color-blurred-background: hsla(210deg, 30%, 8%, 0.85);
+  --color-primary: hsl(230deg, 100%, 67%);
+  --color-secondary: hsl(333deg, 100%, 52%);
+  --color-tertiary: hsl(53deg, 100%, 50%);
+  --color-decorative: hsl(200deg, 50%, 60%);
+  --color-muted: hsl(210deg, 38%, 15%);
+  --color-muted-background: hsla(210deg, 38%, 15%, 0.85);
+  --color-info: hsl(230deg, 100%, 67%);
+  --color-success: hsl(160deg, 100%, 40%);
+  --color-success-background: hsla(160deg, 100%, 40%, 0.1);
+  --color-error: hsl(340deg, 95%, 60%);
+  --color-error-background: hsla(340deg, 95%, 43%, 0.1);
+  --color-alert: hsl(30deg, 100%, 50%);
+  --color-alert-background: hsla(38deg, 100%, 50%, 0.1);
+  --color-venn-0: hsl(250deg, 100%, 50%);
+
+  --color-venn-1: hsl(175deg, 100%, 50%);
+  --color-heading: #f7f9fe;
+  --color-text: #a9adc1;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue-100: #e8f2ff;
+  --color-blue-500: #4b96ff;
+  --color-blueGray-500: #a9adc1;
+  --color-gray-100: #f7f7f7;
+  --color-gray-200: #e6e9ee;
+  --color-gray-300: #dde0e4;
+  --color-gray-400: #818890;
+  --color-gray-500: #535661;
+  --color-gray-600: #4b4c53;
+  --color-gray-700: #3a3d4a;
+  --color-gray-800: #2e3039;
+  --color-gray-900: #1f2028;
+  --color-gray-1000: hsl(210deg, 25%, 96%);
+  --color-green-100: #e7f9ed;
+  --color-green-500: #30c85e;
+  --color-green-600: #68d94a;
+  --color-red-500: #ff4545;
+  --color-yellow-500: #ffd644;
+  --color-team-unknown: #818890;
+  --color-team-blue: #36a3ff;
+  --color-team-red: #ff4545;
+  --color-team-yellow: #a08600;
+  --color-yellow-500: #a08600;
+
+  --color-subtle-background: hsl(210deg, 30%, 8%);
+  --color-subtle-floating: hsl(210deg, 22%, 15%);
+  --color-homepage-light: hsla(200deg, 100%, 85%, 0);
+  --color-homepage-dark: hsla(200deg, 100%, 85%, 0.1);
+  --color-homepage-bg: hsl(210deg, 30%, 8%);
+  --syntax-bg: hsl(210deg, 30%, 12%);
+  --syntax-highlight: hsl(210deg, 30%, 18%);
+  --syntax-txt: #fff;
+  --syntax-comment: #6c8998;
+  --syntax-prop: #ff39a8;
+  --syntax-bool: #ffd600;
+  --syntax-val: #61747d;
+  --syntax-str: rgb(155, 109, 255);
+  --syntax-name: #c653ff;
+  --syntax-del: #ff5555;
+  --syntax-regex: #ffd700;
+  --syntax-fn: rgb(0, 190, 255);
+  --prefers-dark: true;
+  --color--subtle--floating: hsl(210deg, 22%, 15%);
+
+  /*
+    --primary-bg: '#0e141b',
+  
+    --color-background : hsl(210deg, 30%, 8%)
+    --maxWidth-none: "none";
+    --maxWidth-xs: 20rem;
+    --maxWidth-sm: 24rem;
+    --maxWidth-md: 28rem;
+    --maxWidth-lg: 32rem;
+    --maxWidth-xl: 36rem;
+    --maxWidth-2xl: 42rem;
+    --maxWidth-3xl: 48rem;
+    --maxWidth-4xl: 56rem;
+    --maxWidth-full: "100%";
+    --maxWidth-wrapper: var(--maxWidth-2xl);
+    --spacing-px: "1px";
+    --spacing-0: 0;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+    --spacing-16: 4rem;
+    --spacing-20: 5rem;
+    --spacing-24: 6rem;
+    --spacing-32: 8rem;
+    --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
+      Times, serif;
+    --font-body: var(--fontFamily-serif);
+    --font-heading: var(--fontFamily-sans);
+    --fontWeight-normal: 400;
+    --fontWeight-medium: 500;
+    --fontWeight-semibold: 600;
+    --fontWeight-bold: 700;
+    --fontWeight-extrabold: 800;
+    --fontWeight-black: 900;
+    --fontSize-root: 16px;
+    --lineHeight-none: 1;
+    --lineHeight-tight: 1.1;
+    --lineHeight-normal: 1.5;
+    --lineHeight-relaxed: 1.625;
+    /* 1.200 Minor Third Type Scale */
+  /*
+    --fontSize-0: 0.833rem;
+    --fontSize-1: 1rem;
+    --fontSize-2: 1.2rem;
+    --fontSize-3: 1.44rem;
+    --fontSize-4: 1.728rem;
+    --fontSize-5: 2.074rem;
+    --fontSize-6: 2.488rem;
+    --fontSize-7: 2.986rem; 
+    --color-primary: #005b99;
+    --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: black;
+    --color-accent: #d1dce5; */
+  --font-weight-bold: 600;
+  --font-weight-medium: 500;
+  --font-weight-light: 400;
+  --font-family: "Wotfard", Futura, -apple-system, sans-serif;
+  --font-family-mono: "League Mono", "Fira Mono", monospace;
+  --font-family-spicy: "Sriracha", "Wotfard", Futura, -apple-system, sans-serif;
+  --reach-dialog: 1;
+}
+
+/* HTML elements */
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: var(--lineHeight-normal);
+  font-size: var(--fontSize-root);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: #a9adc1;
+  background-color: var(--color-background);
+}
+header {
+  background-color: green;
+  height: 80px;
+}
+nav {
+  background-color: red;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  float: right;
+}
+li {
+  display: inline-block;
+  line-height: 80px;
+}
+.brand {
+  font-size: 2rem;
+  line-height: 80px;
+}
+.navbar {
+  width: 100%;
+  background-color: red;
+}
+
+footer {
+  padding: var(--spacing-6) var(--spacing-0);
+}
+
+hr {
+  background: var(--color-accent);
+  height: 1px;
+  border: 0;
+}
+
+/* Heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-6);
+  line-height: var(--lineHeight-tight);
+  letter-spacing: -0.025em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-heading);
+}
+
+h1 {
+  font-weight: var(--fontWeight-black);
+  font-size: var(--fontSize-6);
+  color: var(--color-heading-black);
+}
+
+h2 {
+  font-size: var(--fontSize-5);
+}
+
+h3 {
+  font-size: var(--fontSize-4);
+}
+
+h4 {
+  font-size: var(--fontSize-3);
+}
+
+h5 {
+  font-size: var(--fontSize-2);
+}
+
+h6 {
+  font-size: var(--fontSize-1);
+}
+
+/* Link */
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* Custom classes */
+
+.global-wrapper {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-10) var(--spacing-5);
+}
+
+.global-wrapper[data-is-root-path="true"] .bio {
+  margin-bottom: var(--spacing-20);
+}
+
+.global-header {
+  margin-bottom: var(--spacing-12);
+}
+
+.navbar a,
+.navbar-text {
+  color: var(--color-heading) !important;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.card {
+  background-color: var(--color-subtle-floating);
+  border: 0 #000;
+}
+.card img {
+  border: 0;
+}
+
+.cardListing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  row-gap: 32px;
+  column-gap: 32px;
+}
+.headings {
+  color: var(--color-gray-1000);
+}
+
+.cardListing .card-body {
+  padding: 3rem 2rem;
+}
