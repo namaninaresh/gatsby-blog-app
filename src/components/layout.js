@@ -1,8 +1,6 @@
 
 import * as React from "react"
 import { Link  } from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -21,7 +19,7 @@ const Layout = ({ location, title, children }) => {
     <nav>
       <ul >
         <li><Link to="/d" className="active"  > Blog</Link></li>
-        <li><Link to="/s" className="dropdownLi"> Topics <FontAwesomeIcon icon={faAngleDown}/></Link>
+        <li><Link to="/s" className="dropdownLi"> Topics </Link>
         
         <ul className="dropdown">
         <li><Link to="/w"  >Javascript</Link></li>
